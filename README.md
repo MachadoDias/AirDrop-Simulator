@@ -32,6 +32,5 @@ O repositório também inclui uma versão da simulação em **Python**, feita co
 
 ## 📷 Imagens do Projeto
 
-![Python Demo](https://github.com/user-attachments/assets/c748918d-05d0-456c-a881-15bbadd81ba9)
 
-[Assista ao vídeo completo](https://youtu.be/SZsq02LZB1M)
+![Python Demo](https://github.com/user-attachments/assets/f7e8cdfc-4676-457d-9ca6-c775be9f85ea)
