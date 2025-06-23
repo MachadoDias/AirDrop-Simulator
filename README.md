@@ -32,5 +32,8 @@ O repositório também inclui uma versão da simulação em **Python**, feita co
 
 ## 📷 Imagens do Projeto
 
-
+![STM32 Demo](https://github.com/user-attachments/assets/16834c47-bc0c-41bd-9b7c-e40efab0ca37)
+</br>
 ![Python Demo](https://github.com/user-attachments/assets/f7e8cdfc-4676-457d-9ca6-c775be9f85ea)
+
+
