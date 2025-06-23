@@ -1,0 +1,10 @@
+main.c:74:5:main	80	static
+main.c:153:6:SystemClock_Config	72	static
+main.c:191:13:MX_SPI1_Init	8	static
+main.c:229:13:MX_GPIO_Init	32	static
+main.c:260:7:CalcHorPos	16	static
+main.c:263:7:CalcVerPos	32	static
+main.c:266:10:MetersToPx	16	static
+main.c:269:7:PxToMeters	16	static
+main.c:272:6:DrawPlane	48	static
+main.c:283:6:Error_Handler	4	static,ignoring_inline_asm
