@@ -1,4 +1,4 @@
-> [🇧🇷 Versão em português](https://github.com/MachadoDias/AirDrop-Simulator/edit/master/README.pt.md)
+> [🇧🇷 Versão em português](https://github.com/MachadoDias/AirDrop-Simulator/blob/master/README.pt.md)
 
 # ✈️ AirDrop Simulator
 
