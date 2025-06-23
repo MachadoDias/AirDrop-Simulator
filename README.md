@@ -1,39 +1,39 @@
-# ✈️ Simulador de Lançamento de Cargas
+> [🇧🇷 Versão em português](https://github.com/MachadoDias/AirDrop-Simulator/edit/master/README.pt.md)
 
-Um simulador eletrônico de lançamento de cargas desenvolvido com o microcontrolador **STM32**, utilizando display gráfico e botões físicos para controlar a simulação.  
-O código calcula o momento ideal para o lançamento da carga com base na velocidade e altura do avião, além da posição do alvo.
+# ✈️ AirDrop Simulator
 
-O repositório também inclui uma versão da simulação em **Python**, feita com **Pygame**, com fins educacionais e de praticidade.
+An electronic payload drop simulator developed with an **STM32** microcontroller, using a graphical display and physical buttons to control the simulation.  
+The system calculates the ideal moment to release the load based on the aircraft’s speed, altitude, and the target's position.
+
+This repository also includes a **Python** version made with **Pygame**, created for testing and learning purposes.
 
 ---
 
-## 🔧 Hardware Utilizado
+## 🔧 Hardware
 
 - 🟦 **STM32F103C8** (Blue Pill)  
-- 🖥️ **Display IPS ST7789**  
-- 🔘 **4 botões físicos com pull-up**
+- 🖥️ **IPS ST7789 Display**  
+- 🔘 **4 physical buttons (pull-up configuration)**
 
 ---
 
-## 💻 Desenvolvimento
+## 💻 Development
 
-- IDEs utilizadas: **STM32CubeIDE** e **VS Code**
-- Biblioteca do display:  
+- IDEs used: **STM32CubeIDE** and **VS Code**
+- Display library:  
   👉 [ALGG-ETEFMC / DISPLAY-IPS](https://github.com/ALGG-ETEFMC/DISPLAY-IPS.git)
 
 ---
 
-## 👨‍🏫 Projeto acadêmico — ETE FMC 34-DS (2025)
+## 👨‍🏫 Academic Project — ETE FMC 34-DS (2025)
 
-### Professora orientadora:
+### Advisor:
 - Ana Letícia
 
 ---
 
-## 📷 Imagens do Projeto
+## 📷 Project Images
 
-![STM32 Demo](https://github.com/user-attachments/assets/16834c47-bc0c-41bd-9b7c-e40efab0ca37)
+![STM32 Demo](https://github.com/user-attachments/assets/16834c47-bc0c-41bd-9b7c-e40efab0ca37)  
 </br>
 ![Python Demo](https://github.com/user-attachments/assets/f7e8cdfc-4676-457d-9ca6-c775be9f85ea)
-
-
