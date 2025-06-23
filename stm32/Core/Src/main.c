@@ -61,6 +61,7 @@ uint16_t MetersToPx(float pos);
 float PxToMeters(float px);
 void DrawPlane(uint16_t x, uint16_t y, uint16_t color);
 uint16_t ConvertHeightToScreenY(float height);
+uint8_t AnyButtonPressed();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -105,6 +106,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  ST7789_Fill_Color(BLACK);
+	  ST7789_WriteString(30, 50, "Aperte para iniciar", Font_11x18, WHITE, BLACK);
+	  while(!AnyButtonPressed()){}
 	  ST7789_Fill_Color(BLACK);
 	  float h = 1000, velAviao = 55, tempo; //Valores de teste, SI
 	  tempo = h*2/GRAVITY;
@@ -263,6 +267,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : PA9 PA10 PA11 PA12 */
+  GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_12;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
 }
 
 /* USER CODE BEGIN 4 */
@@ -285,6 +295,9 @@ void DrawPlane(uint16_t x, uint16_t y, uint16_t color){
 }
 uint16_t ConvertHeightToScreenY(float height) {
 	return HEIGHT - MetersToPx(height);
+}
+uint8_t AnyButtonPressed(){
+	return !(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9) && HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10) && HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_11) && HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_12));
 }
 /* USER CODE END 4 */
 
