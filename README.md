@@ -32,7 +32,7 @@ This repository also includes a **Python** version made with **Pygame**, created
 
 ---
 
-## 📷 Project Images
+## Project Images
 
 ![STM32 Demo](https://github.com/user-attachments/assets/16834c47-bc0c-41bd-9b7c-e40efab0ca37)  
 </br>
